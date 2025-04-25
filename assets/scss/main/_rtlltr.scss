@@ -1,0 +1,112 @@
+//rtl ltr //
+.direction{
+    direction: rtl;
+}
+.rtlwrap{
+    .ltr-v{
+        display: block;
+    }
+    .rtl-v{
+        display: none;
+    }
+    .article-proitem{
+        direction: rtl;
+    }
+    .s-shape1{
+        position: absolute;
+        right: initial;
+        left: 0 !important;
+        top: 0;
+        transition: all 0.4s;
+        transform: rotate(-90deg);
+    }
+    .s-shape2{
+        position: absolute;
+        right: initial;
+        left: 17px !important;
+        top: 17px;
+        transition: all 0.4s;
+    }
+    .s-shape3{
+        position: absolute;
+        right: initial;
+        left: 24px !important;
+        top: 0;
+        transition: all 0.4s;
+    }
+    .latest-shape{
+        right: initial;
+        left: 20px !important;
+    }
+}
+
+.ltr-v{
+    display: none;
+}
+.not-changelrt{
+    direction: ltr;
+}
+.tigger-arrow{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    z-index: 999;
+    transform: translateY(-50%);
+    .gear-icon{
+        width: 46px;
+        border: 1px solid #323232;
+        background: linear-gradient(153deg, rgba(255, 255, 255, 0.12) -65.62%, rgba(255, 255, 255, 0.04) 83.28%);
+        -webkit-backdrop-filter: blur(25px);
+        backdrop-filter: blur(25px);
+        padding: 4px;
+        img{
+            animation: rd360 3s linear infinite;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .tigger-property{
+        border: 1px solid #323232;
+        background: linear-gradient(153deg, rgba(255, 255, 255, 0.12) -65.62%, rgba(255, 255, 255, 0.04) 83.28%);
+        -webkit-backdrop-filter: blur(25px);
+        backdrop-filter: blur(25px);
+        width: 125px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        position: absolute;
+        right: -100%;
+        top: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.8s;
+    }
+    &.tigger-active{
+        .tigger-property{
+            right: 100%;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+.rtl-ltr{
+    button{
+        font-size: 18px;
+        text-transform: uppercase;
+        color: var(--n0);
+    }   
+}
+.mode--toggle{
+    img{
+        width: 18px;
+        object-fit: contain;
+    }
+    .dklg{
+        text-transform: uppercase;
+    }
+}
+@keyframes rd360 {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+//rtl ltr //

@@ -1,0 +1,718 @@
+//Custom Animation
+.line-shape{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: -20px;
+    justify-content: space-between;
+    span{
+       position: relative;
+       width: 2px;
+       height: 2px;
+       display: block; 
+       &::before,
+       &::after{
+           position: absolute;
+           top: 0;
+           left: 0;
+           content: "";
+       }
+       &::after{
+        animation: dscroll 2s linear infinite;
+        width: 3px;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background: var(--s1);
+        opacity: 0.6;
+        box-shadow: rgba(228, 235, 242, 0.2) 0px 8px 24px;
+    }
+    &:nth-child(2){
+        &::after{
+            animation: dscroll 2.1s linear infinite;
+        }
+    }
+    &:nth-child(3){
+        &::after{
+            animation: dscroll 2.2s linear infinite;
+        }
+    }
+    &:nth-child(4){
+        &::after{
+            animation: dscroll 2.3s linear infinite;
+        }
+    }
+    &:nth-child(5){
+        &::after{
+            animation: dscroll 2.4s linear infinite;
+        }
+    }
+    &:nth-child(6){
+        &::after{
+            animation: dscroll 1s linear infinite;
+        }
+    }
+    &:nth-child(7){
+        &::after{
+            animation: dscroll 3.5s linear infinite;
+        }
+    }
+    &:nth-child(8){
+        &::after{
+            animation: dscroll 4.5s linear infinite;
+        }
+    }
+    &:nth-child(9){
+        &::after{
+            animation: dscroll 2.8s linear infinite;
+        }
+    }
+    &:nth-child(10){
+        &::after{
+            animation: dscroll 2.9s linear infinite;
+        }
+    }
+    &:nth-child(11){
+        &::after{
+            animation: dscroll 5s linear infinite;
+        }
+    }
+    &:nth-child(12){
+        &::after{
+            animation: dscroll 4.3s linear infinite;
+        }
+    }
+    &:nth-child(13){
+        &::after{
+            animation: dscroll 3.1s linear infinite;
+        }
+    }
+    &:nth-child(14){
+        &::after{
+            animation: dscroll 3.5s linear infinite;
+        }
+    }
+    &:nth-child(15){
+        &::after{
+            animation: dscroll 2.5s linear infinite;
+        }
+    }
+    &:nth-child(16){
+        &::after{
+            animation: dscroll 3.9s linear infinite;
+        }
+    }
+    &:nth-child(17){
+        &::after{
+            animation: dscroll 2.5s linear infinite;
+        }
+    }
+    &:nth-child(18){
+        &::after{
+            animation: dscroll 2s linear infinite;
+        }
+    }
+    &:nth-child(19){
+        &::after{
+            animation: dscroll 5.1s linear infinite;
+        }
+    }
+    &:nth-child(20){
+        &::after{
+            animation: dscroll 4s linear infinite;
+        }
+    }
+    &:nth-child(21){
+        &::after{
+            animation: dscroll 9s linear infinite;
+        }
+    }
+    &:nth-child(22){
+        &::after{
+            animation: dscroll 5s linear infinite;
+        }
+    }
+    &:nth-child(23){
+        &::after{
+            animation: dscroll 5.2s linear infinite;
+        }
+    }
+    &:nth-child(24){
+        &::after{
+            animation: dscroll 4.8s linear infinite;
+        }
+    }
+    &:nth-child(25){
+        &::after{
+            animation: dscroll 3.4s linear infinite;
+        }
+    }
+    &:nth-child(26){
+        &::after{
+            animation: dscroll 2s linear infinite;
+        }
+    }
+    &:nth-child(27){
+        &::after{
+            animation: dscroll 3s linear infinite;
+        }
+    }
+    &:nth-child(28){
+        &::after{
+            animation: dscroll 4s linear infinite;
+        }
+    }
+    &:nth-child(29){
+        &::after{
+            animation: dscroll 2.1s linear infinite;
+        }
+    }
+    &:nth-child(30){
+        &::after{
+            animation: dscroll 2.8s linear infinite;
+        }
+    }
+    &:nth-child(31){
+        &::after{
+            animation: dscroll 10s linear infinite;
+        }
+    }
+    &:nth-child(32){
+        &::after{
+            animation: dscroll 8.6s linear infinite;
+        }
+    }
+    &:nth-child(33){
+        &::after{
+            animation: dscroll 7.2s linear infinite;
+        }
+    }
+    &:nth-child(34){
+        &::after{
+            animation: dscroll 4.5s linear infinite;
+        }
+    }
+    &:nth-child(35){
+        &::after{
+            animation: dscroll 3s linear infinite;
+        }
+    }
+    &:nth-child(36){
+        &::after{
+            animation: dscroll 2.5s linear infinite;
+        }
+    }
+    &:nth-child(37){
+        &::after{
+            animation: dscroll 5.2s linear infinite;
+        }
+    }
+    &:nth-child(38){
+        &::after{
+            animation: dscroll 3.2s linear infinite;
+        }
+    }
+    &:nth-child(39){
+        &::after{
+            animation: dscroll 3.8s linear infinite;
+        }
+    }
+    &:nth-child(40){
+        &::after{
+            animation: dscroll 4s linear infinite;
+        }
+    }
+    &:nth-child(41){
+        &::after{
+            animation: dscroll 4.5s linear infinite;
+        }
+    }
+    &:nth-child(42){
+        &::after{
+            animation: dscroll 7s linear infinite;
+        }
+    }
+    &:nth-child(43){
+        &::after{
+            animation: dscroll 8.2s linear infinite;
+        }
+    }
+    &:nth-child(44){
+        &::after{
+            animation: dscroll 4.6s linear infinite;
+        }
+    }
+    &:nth-child(45){
+        &::after{
+            animation: dscroll 4.6s linear infinite;
+        }
+    }
+    &:nth-child(46){
+        &::after{
+            animation: dscroll 7s linear infinite;
+        }
+    }
+    &:nth-child(47){
+        &::after{
+            animation: dscroll 6.2s linear infinite;
+        }
+    }
+    &:nth-child(48){
+        &::after{
+            animation: dscroll 5.2s linear infinite;
+        }
+    }
+    &:nth-child(49){
+        &::after{
+            animation: dscroll 7.2s linear infinite;
+        }
+    }
+    &:nth-child(50){
+        &::after{
+            animation: dscroll 5s linear infinite;
+        }
+    }
+    &:nth-child(51){
+        &::after{
+            animation: dscroll 2.1s linear infinite;
+        }
+    }
+    &:nth-child(52){
+        &::after{
+            animation: dscroll 2.2s linear infinite;
+        }
+    }
+    &:nth-child(53){
+        &::after{
+            animation: dscroll 2.3s linear infinite;
+        }
+    }
+    &:nth-child(54){
+        &::after{
+            animation: dscroll 2.4s linear infinite;
+        }
+    }
+    &:nth-child(55){
+        &::after{
+            animation: dscroll 1s linear infinite;
+        }
+    }
+    &:nth-child(56){
+        &::after{
+            animation: dscroll 3.5s linear infinite;
+        }
+    }
+    &:nth-child(57){
+        &::after{
+            animation: dscroll 4.5s linear infinite;
+        }
+    }
+    &:nth-child(58){
+        &::after{
+            animation: dscroll 2.8s linear infinite;
+        }
+    }
+    &:nth-child(59){
+        &::after{
+            animation: dscroll 2.9s linear infinite;
+        }
+    }
+    &:nth-child(60){
+        &::after{
+            animation: dscroll 5s linear infinite;
+        }
+    }
+    &:nth-child(61){
+        &::after{
+            animation: dscroll 4.3s linear infinite;
+        }
+    }
+    &:nth-child(62){
+        &::after{
+            animation: dscroll 3.1s linear infinite;
+        }
+    }
+    &:nth-child(64){
+        &::after{
+            animation: dscroll 3.5s linear infinite;
+        }
+    }
+    &:nth-child(65){
+        &::after{
+            animation: dscroll 2.5s linear infinite;
+        }
+    }
+    &:nth-child(66){
+        &::after{
+            animation: dscroll 3.9s linear infinite;
+        }
+    }
+    &:nth-child(67){
+        &::after{
+            animation: dscroll 2.5s linear infinite;
+        }
+    }
+    &:nth-child(68){
+        &::after{
+            animation: dscroll 2s linear infinite;
+        }
+    }
+    &:nth-child(69){
+        &::after{
+            animation: dscroll 5.1s linear infinite;
+        }
+    }
+    &:nth-child(70){
+        &::after{
+            animation: dscroll 4s linear infinite;
+        }
+    }
+    &:nth-child(71){
+        &::after{
+            animation: dscroll 9s linear infinite;
+        }
+    }
+    &:nth-child(72){
+        &::after{
+            animation: dscroll 5s linear infinite;
+        }
+    }
+    &:nth-child(73){
+        &::after{
+            animation: dscroll 5.2s linear infinite;
+        }
+    }
+    &:nth-child(74){
+        &::after{
+            animation: dscroll 4.8s linear infinite;
+        }
+    }
+    &:nth-child(75){
+        &::after{
+            animation: dscroll 3.4s linear infinite;
+        }
+    }
+    &:nth-child(76){
+        &::after{
+            animation: dscroll 2s linear infinite;
+        }
+    }
+    &:nth-child(77){
+        &::after{
+            animation: dscroll 3s linear infinite;
+        }
+    }
+    &:nth-child(78){
+        &::after{
+            animation: dscroll 4s linear infinite;
+        }
+    }
+    &:nth-child(79){
+        &::after{
+            animation: dscroll 2.1s linear infinite;
+        }
+    }
+    &:nth-child(80){
+        &::after{
+            animation: dscroll 2.8s linear infinite;
+        }
+    }
+    &:nth-child(81){
+        &::after{
+            animation: dscroll 10s linear infinite;
+        }
+    }
+    &:nth-child(82){
+        &::after{
+            animation: dscroll 8.6s linear infinite;
+        }
+    }
+    &:nth-child(83){
+        &::after{
+            animation: dscroll 7.2s linear infinite;
+        }
+    }
+    &:nth-child(84){
+        &::after{
+            animation: dscroll 4.5s linear infinite;
+        }
+    }
+    &:nth-child(85){
+        &::after{
+            animation: dscroll 3s linear infinite;
+        }
+    }
+    &:nth-child(86){
+        &::after{
+            animation: dscroll 2.5s linear infinite;
+        }
+    }
+    &:nth-child(87){
+        &::after{
+            animation: dscroll 5.2s linear infinite;
+        }
+    }
+    &:nth-child(88){
+        &::after{
+            animation: dscroll 3.2s linear infinite;
+        }
+    }
+    &:nth-child(89){
+        &::after{
+            animation: dscroll 3.8s linear infinite;
+        }
+    }
+    &:nth-child(90){
+        &::after{
+            animation: dscroll 4s linear infinite;
+        }
+    }
+    &:nth-child(91){
+        &::after{
+            animation: dscroll 4.5s linear infinite;
+        }
+    }
+    &:nth-child(92){
+        &::after{
+            animation: dscroll 7s linear infinite;
+        }
+    }
+    &:nth-child(93){
+        &::after{
+            animation: dscroll 8.2s linear infinite;
+        }
+    }
+    &:nth-child(94){
+        &::after{
+            animation: dscroll 4.6s linear infinite;
+        }
+    }
+    &:nth-child(95){
+        &::after{
+            animation: dscroll 4.6s linear infinite;
+        }
+    }
+    &:nth-child(96){
+        &::after{
+            animation: dscroll 7s linear infinite;
+        }
+    }
+    &:nth-child(97){
+        &::after{
+            animation: dscroll 6.2s linear infinite;
+        }
+    }
+    &:nth-child(98){
+        &::after{
+            animation: dscroll 5.2s linear infinite;
+        }
+    }
+    &:nth-child(100){
+        &::after{
+            animation: dscroll 7.2s linear infinite;
+        }
+    }
+    &:nth-child(49){
+        &::after{
+            animation: dscroll 5s linear infinite;
+        }
+    }
+
+    //before animation 
+
+       &::before{
+            width: 3px;
+            height: 3px;
+            top: 100%;
+            left: 0;
+            background: var(--s1);
+            opacity: 0.4;
+            box-shadow: rgba(228, 235, 242, 0.2) 0px 8px 24px;
+       }
+       &:nth-child(2){
+        &::after{
+            animation: bscroll 10s linear infinite;
+        }
+    }
+    &:nth-child(3){
+        &::after{
+            animation: bscroll 9s linear infinite;
+        }
+    }
+    &:nth-child(4){
+        &::after{
+            animation: bscroll 8s linear infinite;
+        }
+    }
+    &:nth-child(5){
+        &::after{
+            animation: bscroll 7s linear infinite;
+        }
+    }
+    &:nth-child(6){
+        &::after{
+            animation: bscroll 6s linear infinite;
+        }
+    }
+    &:nth-child(7){
+        &::after{
+            animation: bscroll 5s linear infinite;
+        }
+    }
+    &:nth-child(8){
+        &::after{
+            animation: bscroll 18s linear infinite;
+        }
+    }
+    &:nth-child(9){
+        &::after{
+            animation: bscroll 16s linear infinite;
+        }
+    }
+    &:nth-child(10){
+        &::after{
+            animation: bscroll 12s linear infinite;
+        }
+    }
+    &:nth-child(11){
+        &::after{
+            animation: bscroll 14s linear infinite;
+        }
+    }
+    &:nth-child(12){
+        &::after{
+            animation: bscroll 13s linear infinite;
+        }
+    }
+    &:nth-child(13){
+        &::after{
+            animation: bscroll 9s linear infinite;
+        }
+    }
+    &:nth-child(14){
+        &::after{
+            animation: bscroll 20s linear infinite;
+        }
+    }
+    &:nth-child(15){
+        &::after{
+            animation: bscroll 4s linear infinite;
+        }
+    }
+    &:nth-child(16){
+        &::after{
+            animation: bscroll 20s linear infinite;
+        }
+    }
+    &:nth-child(17){
+        &::after{
+            animation: bscroll 7s linear infinite;
+        }
+    }
+    &:nth-child(18){
+        &::after{
+            animation: bscroll 9s linear infinite;
+        }
+    }
+    &:nth-child(19){
+        &::after{
+            animation: bscroll 10s linear infinite;
+        }
+    }
+    &:nth-child(20){
+        &::after{
+            animation: bscroll 11s linear infinite;
+        }
+    }
+    &:nth-child(21){
+        &::after{
+            animation: bscroll 9s linear infinite;
+        }
+    }
+    &:nth-child(22){
+        &::after{
+            animation: bscroll 4s linear infinite;
+        }
+    }
+    &:nth-child(23){
+        &::after{
+            animation: bscroll 5.2s linear infinite;
+        }
+    }
+    &:nth-child(24){
+        &::after{
+            animation: bscroll 2s linear infinite;
+        }
+    }
+    &
+    &:nth-child(32){
+        &::after{
+            animation: bscroll 2s linear infinite;
+        }
+    }
+    &:nth-child(33){
+        &::after{
+            animation: bscroll 4s linear infinite;
+        }
+    }
+    &:nth-child(34){
+        &::after{
+            animation: bscroll 7s linear infinite;
+        }
+    }
+   
+    &:nth-child(41){
+        &::after{
+            animation: bscroll 14s linear infinite;
+        }
+    }
+    &:nth-child(42){
+        &::after{
+            animation: bscroll 8s linear infinite;
+        }
+    }
+    &:nth-child(43){
+        &::after{
+            animation: bscroll 2s linear infinite;
+        }
+    }
+    &:nth-child(44){
+        &::after{
+            animation: bscroll 10s linear infinite;
+        }
+    }
+   
+    &:nth-child(47){
+        &::after{
+            animation: bscroll 11s linear infinite;
+        }
+    }
+    &:nth-child(48){
+        &::after{
+            animation: bscroll 9s linear infinite;
+        }
+    }
+    &:nth-child(49){
+        &::after{
+            animation: bscroll 7.2s linear infinite;
+        }
+    }
+    &:nth-child(50){
+        &::after{
+            animation: bscroll 5s linear infinite;
+        }
+    }
+    }
+}
+@keyframes dscroll {
+    100%{
+        transform: translateY(100vh);
+    }
+}
+@keyframes bscroll {
+    100%{
+        transform: translateY(100vh);
+    }
+}
+//Custom Animation
