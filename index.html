@@ -38,6 +38,17 @@
       id="spline-bg"
       url="https://prod.spline.design/ToVGBEUCl1bfVrNu/scene.splinecode"
     ></spline-viewer>
+
+    <script>
+      const viewer = document.getElementById('viewer')
+
+      viewer.addEventListener('load', () => {
+        //
+        viewer.setAutoPlay(false)
+
+        viewer.emitEvent('start', 'AnimationName')
+      })
+    </script>
     <!-- ==== preloader ==== -->
 
     <div id="preloader">
