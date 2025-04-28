@@ -5210,3 +5210,9 @@ svg path {
   height: 100% !important;
   object-fit: cover;
 }
+
+.narrower {
+  max-width: 93%; /* o 80%, o un número fijo como 800px */
+  margin-left: auto;
+  margin-right: auto;
+}
