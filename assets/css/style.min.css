@@ -5295,3 +5295,51 @@ svg path {
   display: block;
   text-align: left; /* Esto alinea el texto a la izquierda */
 }
+
+/* .eleven-labs-wedget {
+  right: 150px;
+} */
+
+.mas-grande {
+  height: 41vh;
+}
+
+/* Pantallas medianas (tablets) */
+@media (max-width: 1025px) {
+  .mas-grande {
+    height: 15vh;
+  }
+}
+
+/* Pantallas pequeñas (móviles grandes) */
+@media (max-width: 767px) {
+  .mas-grande {
+    height: 60vh;
+  }
+}
+
+/* Móviles muy pequeños */
+@media (max-width: 480px) {
+  .mas-grande {
+    height: 20vh;
+  }
+}
+
+.eleven-labs-wedget {
+  right: 150px;
+  top: 50px;
+}
+
+@media (max-width: 1025px) {
+  .eleven-labs-wedget {
+    right: 55px;
+    top: -5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .eleven-labs-wedget {
+    right: 30px;
+    top: -5px;
+  }
+}
