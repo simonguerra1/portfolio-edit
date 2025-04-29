@@ -5218,7 +5218,7 @@ svg path {
 }
 
 .agrandar {
-  flex-grow: 0.6;
+  flex-grow: 0.7;
   display: flex;
   flex-direction: column;
 }
