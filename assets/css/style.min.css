@@ -3509,6 +3509,11 @@ svg path {
 .marquee-inner.to-left {
   animation: marqueeLeft 25s linear infinite;
 }
+
+.marquee-inner.to-left-webchain {
+  animation: marqueeLeft 5s linear infinite;
+}
+
 @keyframes marqueeLeft {
   0% {
     left: 0;
@@ -5212,6 +5217,11 @@ svg path {
 }
 
 .narrower {
+  max-width: 100%; /* o 80%, o un número fijo como 800px */
+  margin-left: auto;
+  margin-right: auto;
+}
+.narrower2 {
   max-width: 93%; /* o 80%, o un número fijo como 800px */
   margin-left: auto;
   margin-right: auto;
@@ -5279,4 +5289,9 @@ svg path {
 
 .soci:hover {
   color: #7c17a2;
+}
+
+.d-block {
+  display: block;
+  text-align: left; /* Esto alinea el texto a la izquierda */
 }
