@@ -5216,3 +5216,67 @@ svg path {
   margin-left: auto;
   margin-right: auto;
 }
+
+.agrandar {
+  flex-grow: 0.6;
+  display: flex;
+  flex-direction: column;
+}
+
+.agrandar a {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.col-lg-4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.blur-background {
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
+  border-radius: 20px;
+}
+
+.read-more-link {
+  display: inline;
+  color: #7c17a2;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.read-more-wrapper {
+  position: relative;
+}
+
+.read-more-wrapper {
+  max-height: 4.8em; /* Aprox. 5 líneas (1.6em por línea) */
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  position: relative;
+}
+
+.read-more-wrapper.expanded {
+  max-height: 1000px; /* Suficiente para que se vea todo */
+}
+
+.read-more-link {
+  display: inline-block;
+  margin-top: 0.5em;
+  color: #7c17a2;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.soci {
+  color: #ffffff; /* color inicial, puedes cambiarlo */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.soci:hover {
+  color: #7c17a2;
+}
