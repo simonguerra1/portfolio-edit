@@ -5325,11 +5325,8 @@ svg path {
   width: 42px;
 }
 
-/* Center the widget horizontally and vertically */
-elevenlabs-convai {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  color: #ffffff;
+@media (max-width: 575.98px) {
+  .mas-grande {
+    min-height: 280px; /* o cualquier altura que necesites */
+  }
 }
