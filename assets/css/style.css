@@ -5555,3 +5555,23 @@ svg path {
 .margin-top-15 {
   margin-top: 15px;
 }
+
+.body-socialtwo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 26px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.body-socialtwo li {
+  flex: 0 1 25%; /* 4 columnas por defecto */
+}
+
+@media (max-width: 576px) {
+  .body-socialtwo li {
+    flex: 0 1 45%; /* 2 columnas en pantallas pequeñas */
+  }
+}

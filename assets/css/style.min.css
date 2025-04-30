@@ -5383,3 +5383,9 @@ button {
 .container-simon:active::before {
   filter: blur(0.2em);
 }
+
+@media (max-width: 576px) {
+  .mas-grande {
+    min-height: 150px;
+  }
+}
