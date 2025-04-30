@@ -5296,10 +5296,6 @@ svg path {
   text-align: left; /* Esto alinea el texto a la izquierda */
 }
 
-/* .eleven-labs-wedget {
-  right: 150px;
-} */
-
 .mas-grande {
   height: 41vh;
 }
@@ -5325,21 +5321,15 @@ svg path {
   }
 }
 
-.eleven-labs-wedget {
-  right: 150px;
-  top: 50px;
+.linkedin-svg {
+  width: 42px;
 }
 
-@media (max-width: 1025px) {
-  .eleven-labs-wedget {
-    right: 55px;
-    top: -5px;
-  }
-}
-
-@media (max-width: 480px) {
-  .eleven-labs-wedget {
-    right: 30px;
-    top: -5px;
-  }
+/* Center the widget horizontally and vertically */
+elevenlabs-convai {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #ffffff;
 }

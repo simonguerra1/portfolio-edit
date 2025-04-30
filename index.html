@@ -69,35 +69,6 @@
 
       <!-- <div class="line-shape cus-z-1 first w-100 h-100 d-flex flex-wrap"></div> -->
 
-      <!-- ==== Custom Curpor Pointer ==== -->
-
-      <!-- ==== Dark Light Rtl Ltr Included ==== -->
-      <div class="tigger-arrow">
-        <div class="gear-icon">
-          <img src="assets/images/gear.png" alt="img" />
-        </div>
-        <div class="tigger-property d-flex align-items-center pt-3 pb-3 px-6">
-          <div class="box">
-            <div class="rtl-ltr mb-2">
-              <button
-                class="direction--toggle fw_400 rtl-v n0-color position-relative cus-z1"
-              >
-                Rtl
-              </button>
-              <button class="direction--toggletwo fw_400 ltr-v">Ltr</button>
-            </div>
-            <a
-              href="javascript:void(0)"
-              class="mode--toggle gap-2 d-flex align-items-center position-relative cus-z1"
-            >
-              <span class="n0-color dk-v text-uppercase fw_400">Dark</span>
-              <span class="n0-color lg-v text-uppercase fw_400">Light</span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <!-- ==== Dark Light Rtl Ltr Included ==== -->
-
       <!--Header Here-->
       <header
         class="header-section mb-xxl-15 mb-xl-8 mb-7 mt-xxl-15 mt-xl-8 mt-7 header-sectionone"
@@ -2080,10 +2051,21 @@
                           class="contenedor primero segundo g-xxl-6 g-4 mb-xxl-6 align-items-stretch h-100"
                         >
                           <div
-                            class="common-serbox d-block cmn-box py-xl-8 py-4 px-xxl-6 px-4 narrower d-flex align-items-center justify-content-center h-100"
+                            class="common-serbox d-flex flex-column cmn-box p-3 narrower align-items-center justify-content-start"
+                            style="height: 270px"
                           >
                             <div
-                              class="contenedor-widget d-flex justify-content-center w-100"
+                              class="texto-widget text-start w-100"
+                              style="padding-left: 40px; padding-top: 20px"
+                            >
+                              <span class="fw-bold fs-4 text-white">
+                                Try our AI solutions
+                              </span>
+                            </div>
+
+                            <div
+                              class="contenedor-widget d-flex justify-content-center w-100 position-relative"
+                              style="height: 120px"
                             >
                               <elevenlabs-convai
                                 agent-id="EMvftfYvCizF0Rahq7yX"
@@ -2097,6 +2079,39 @@
                             async
                             type="text/javascript"
                           ></script>
+
+                          <script>
+                            window.addEventListener('DOMContentLoaded', () => {
+                              const waitForWidget = setInterval(() => {
+                                const widget =
+                                  document.querySelector('elevenlabs-convai')
+                                if (widget && widget.shadowRoot) {
+                                  const container =
+                                    widget.shadowRoot.querySelector(
+                                      '[style*="position: fixed"]'
+                                    )
+                                  if (container) {
+                                    clearInterval(waitForWidget)
+
+                                    relative
+                                    const parent = widget.parentElement
+                                    if (parent)
+                                      parent.style.position = 'relative'
+
+                                    container.style.position = 'absolute'
+                                    container.style.top = '50%'
+                                    container.style.left = '50%'
+                                    container.style.transform =
+                                      'translate(-50%, -50%)'
+                                    container.style.right = 'unset'
+                                    container.style.bottom = 'unset'
+                                    container.style.margin = '0'
+                                    container.style.zIndex = '1'
+                                  }
+                                }
+                              }, 300)
+                            })
+                          </script>
                         </div>
                       </div>
                     </div>
@@ -2232,57 +2247,54 @@
                             stroke-linejoin="round"
                           ></path>
                           <svg
-                            width="40"
-                            height="40"
-                            viewBox="0 0 40 40"
-                            fill="none"
                             xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 256 256"
+                            class="linkedin-svg"
                           >
-                            <g transform="scale(0.15625)">
-                              <rect
-                                x="32"
-                                y="32"
-                                width="192"
-                                height="192"
-                                rx="8"
-                                fill="none"
-                                stroke="white"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="16"
-                              />
-                              <line
-                                x1="120"
-                                y1="112"
-                                x2="120"
-                                y2="176"
-                                fill="none"
-                                stroke="white"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="16"
-                              />
-                              <line
-                                x1="88"
-                                y1="112"
-                                x2="88"
-                                y2="176"
-                                fill="none"
-                                stroke="white"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="16"
-                              />
-                              <path
-                                d="M120,140a28,28,0,0,1,56,0v36"
-                                fill="none"
-                                stroke="white"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="16"
-                              />
-                              <circle cx="88" cy="84" r="12" fill="white" />
-                            </g>
+                            <rect width="256" height="256" fill="none" />
+                            <rect
+                              x="32"
+                              y="32"
+                              width="192"
+                              height="192"
+                              rx="8"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="8"
+                            />
+                            <line
+                              x1="120"
+                              y1="112"
+                              x2="120"
+                              y2="176"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="8"
+                            />
+                            <line
+                              x1="88"
+                              y1="112"
+                              x2="88"
+                              y2="176"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="8"
+                            />
+                            <path
+                              d="M120,140a28,28,0,0,1,56,0v36"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="8"
+                            />
+                            <circle cx="88" cy="84" r="8" />
                           </svg>
 
                           <span class="shape-icon">
@@ -2337,7 +2349,6 @@
                       </li>
                     </ul>
 
-                    <!-- Enlace de perfil (con ícono de flecha) -->
                     <a
                       href="about.html"
                       class="d-flex mt-7 cmn-footarrow align-items-center justify-content-between"
@@ -2377,20 +2388,6 @@
           <div
             class="footer-wrap d-grid gap-4 justify-content-center d-lg-flex align-items-center justify-content-lg-between"
           >
-            <div class="footer-copyright">
-              <span class="fw_400 n0-color">
-                Copyright &copy; 2024
-                <a href="index.html" class="bento-tag">BentoX</a>
-              </span>
-              <span class="fw_400 n0-color designed-by">
-                Designed By
-                <a
-                  href="https://themeforest.net/user/pixelaxis"
-                  class="s1-color"
-                  >Pixelaxis</a
-                >
-              </span>
-            </div>
             <ul
               class="footer-link justify-content-center flex-wrap position-relative cus-z1"
             >
