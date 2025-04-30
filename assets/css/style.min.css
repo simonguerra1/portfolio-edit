@@ -5297,7 +5297,7 @@ svg path {
 }
 
 .mas-grande {
-  height: 41vh;
+  height: 38vh;
 }
 
 /* Pantallas medianas (tablets) */
@@ -5388,4 +5388,12 @@ button {
   .mas-grande {
     min-height: 150px;
   }
+}
+
+.size-control {
+  max-height: 330px;
+}
+
+.contenedor-widget {
+  max-height: 400px;
 }
