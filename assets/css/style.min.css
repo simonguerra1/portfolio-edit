@@ -5397,3 +5397,7 @@ button {
 .contenedor-widget {
   max-height: 400px;
 }
+
+.radius12 {
+  width: 200px;
+}
