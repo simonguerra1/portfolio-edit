@@ -5401,3 +5401,44 @@ button {
 .radius12 {
   width: 200px;
 }
+
+.svg-glow-wrapper {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: transparent;
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 0;
+}
+
+.svg-glow-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 2px;
+  background: linear-gradient(90deg, #03a9f4, #f441a5);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+  transition: opacity 0.4s ease;
+  opacity: 0;
+}
+
+.custom-icon {
+  width: 60px;
+  height: 60px;
+  color: white;
+  transition: all 0.4s ease;
+}
+
+.svg-glow-wrapper:hover {
+  background-color: #000;
+  box-shadow: 0 0 20px 4px rgba(244, 65, 165, 0.4);
+}
+
+.svg-glow-wrapper:hover::before {
+  opacity: 1;
+}
