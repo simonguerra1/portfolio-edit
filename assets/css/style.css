@@ -5555,22 +5555,3 @@ svg path {
 .margin-top-15 {
   margin-top: 15px;
 }
-
-.svg-hover-white svg path,
-.svg-hover-white svg polyline,
-.svg-hover-white svg line,
-.svg-hover-white svg ellipse,
-.svg-hover-white svg circle,
-.svg-hover-white svg polygon {
-  transition: stroke 0.3s ease, fill 0.3s ease;
-}
-
-.svg-hover-white:hover svg path,
-.svg-hover-white:hover svg polyline,
-.svg-hover-white:hover svg line,
-.svg-hover-white:hover svg ellipse,
-.svg-hover-white:hover svg circle,
-.svg-hover-white:hover svg polygon {
-  stroke: white;
-  fill: white;
-}
