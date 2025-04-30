@@ -5382,15 +5382,16 @@ button {
 }
 
 .svg-glow-wrapper {
-  display: inline-block;
-  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
   border-radius: 20px;
   background-color: #000;
   position: relative;
   z-index: 0;
   box-shadow: 0 0 16px 4px rgba(244, 65, 165, 0.5);
   transition: all 0.3s ease;
-  align-items: center;
 }
 
 .svg-glow-wrapper::before {
@@ -5433,7 +5434,24 @@ button {
     height: 15vh;
   }
   .svg-glow-wrapper {
+    width: 80px;
+  }
+  .custom-icon {
     width: 50px;
+    height: 50px;
+  }
+
+  .ordering-brand {
+    justify-content: center;
+  }
+
+  .ordering-brand > li {
+    width: 50px;
+  }
+
+  .svg-glow-wrapper {
+    width: 60px;
+    height: 60px;
   }
 }
 
@@ -5442,11 +5460,20 @@ button {
   .mas-grande {
     height: 60vh;
   }
+
+  .ordering-brand {
+    gap: 5px;
+  }
 }
 
 /* Móviles muy pequeños */
 @media (max-width: 480px) {
   .mas-grande {
     height: 20vh;
+  }
+
+  .svg-glow-wrapper {
+    width: 60px;
+    height: 60px;
   }
 }
